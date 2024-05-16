@@ -3,27 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mi Portafolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav, section, footer {
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #eee;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .proyecto {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a mi Página Web</h1>
+        <h1>Mi Portafolio</h1>
+        <img src="https://i.pinimg.com/564x/2b/59/91/2b5991845b29f4a0b12de42ee2f99241.jpg" alt="Texto alternativo de la imagen">
+        
+        <p>Bienvenido a mi portafolio en línea</p>
     </header>
+
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
-    <section>
-        <h2>Acerca de</h2>
-        <p>Esta es una página web de ejemplo para mostrar HTML y CSS.</p>
+
+    <section id="inicio">
+        <h2>¡Hola, soy [Tu Nombre]!</h2>
+        <p>¡Bienvenido a mi portafolio en línea! Aquí encontrarás información sobre mí y mis proyectos.</p>
     </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Soy un [tu profesión o especialidad] apasionado por [tu campo de interés]. Me encanta [algo que te apasione o en lo que seas experto].</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto 1.</p>
+        </div>
+        <div class="proyecto">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto 2.</p>
+        </div>
+        <!-- Agrega más proyectos según sea necesario -->
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de correo electrónico en <a href="mailto:tu@email.com">tu@email.com</a>.</p>
+    </section>
+
     <footer>
-        <p>Derechos de autor &copy; 2024 - Mi Página Web</p>
+        <p>&copy; 2024 - Mi Portafolio</p>
     </footer>
 </body>
 </html>
+
